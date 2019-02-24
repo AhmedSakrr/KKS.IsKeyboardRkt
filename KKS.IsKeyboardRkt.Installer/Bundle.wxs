@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+  <Bundle Name="Is Keyboard Rootkitted Bootstrapper" Version="2.1.3.0" Manufacturer="Kjetil Kristoffer Solberg" UpgradeCode="CCDD4361-50f0-4eee-a4fc-30b6ad8b720c" IconSourceFile="keyboard.ico">
+    <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense" >
+      <bal:WixStandardBootstrapperApplication  LicenseFile="License.rtf"  LogoFile="Logo.bmp" />
+    </BootstrapperApplicationRef>
+    <Chain>
+      <!-- TODO: Define the list of chained packages. -->
+      <!-- ExePackage SourceFile="$(sys.CURRENTDIR)VC_REDIST\vc_redist.x86.exe" Permanent="yes" InstallCommand="/install /quiet" / -->
+      <ExePackage SourceFile="$(sys.CURRENTDIR)VC_REDIST\vc_redist.x64.exe" Permanent="yes" Vital="no" InstallCommand="/install /quiet" />
+      <MsiPackage SourceFile="$(sys.CURRENTDIR)..\KKS.IsKeyboardRkt.Setup\bin\Release\KKS.IsKeyboardRkt.Setup.msi" Vital="yes" Visible="yes" />
+    </Chain>
+  </Bundle>
+</Wix>

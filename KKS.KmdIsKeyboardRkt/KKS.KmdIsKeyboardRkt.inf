@@ -1,0 +1,89 @@
+;
+; KKS.KmdIsKeyboardRkt.inf
+;
+[Version]
+Signature="$WINDOWS NT$"
+Class="SoftwareDevice"
+ClassGuid={62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+Provider=%ManufacturerName%
+CatalogFile=KKS.KmdIsKeyboardRkt.cat
+DriverVer=11/07/2017,1.0.0.0
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+; ================= Class section =====================
+
+;[ClassInstall32]
+;Addreg=SampleClassReg
+
+[SampleClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+KKS.KmdIsKeyboardRkt.sys  = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%KKS.KmdIsKeyboardRkt.DeviceDesc%=KKS.KmdIsKeyboardRkt_Device, Root\IsKeyboardRootKitted
+
+[KKS.KmdIsKeyboardRkt_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+KKS.KmdIsKeyboardRkt.sys
+
+;-------------- Service installation
+[KKS.KmdIsKeyboardRkt_Device.NT.Services]
+AddService = KKS.KmdIsKeyboardRkt,%SPSVCINST_ASSOCSERVICE%, KKS.KmdIsKeyboardRkt_Service_Inst
+
+; -------------- KKS.KmdIsKeyboardRkt driver install sections
+[KKS.KmdIsKeyboardRkt_Service_Inst]
+DisplayName    = %KKS.KmdIsKeyboardRkt.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\KKS.KmdIsKeyboardRkt.sys
+
+;
+;--- KKS.KmdIsKeyboardRkt_Device Coinstaller installation ------
+;
+
+[DestinationDirs]
+KKS.KmdIsKeyboardRkt_Device_CoInstaller_CopyFiles = 11
+
+[KKS.KmdIsKeyboardRkt_Device.NT.CoInstallers]
+AddReg=KKS.KmdIsKeyboardRkt_Device_CoInstaller_AddReg
+CopyFiles=KKS.KmdIsKeyboardRkt_Device_CoInstaller_CopyFiles
+
+[KKS.KmdIsKeyboardRkt_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[KKS.KmdIsKeyboardRkt_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[SourceDisksFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
+
+[KKS.KmdIsKeyboardRkt_Device.NT.Wdf]
+KmdfService =  KKS.KmdIsKeyboardRkt, KKS.KmdIsKeyboardRkt_wdfsect
+[KKS.KmdIsKeyboardRkt_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Kjetil Kristoffer Solberg"
+ClassName="SoftwareDevice"
+DiskName = "Kernel Mode Driver - Is Keyboard Rootkitted Installation Disk"
+KKS.KmdIsKeyboardRkt.DeviceDesc = "Is Keyboard Rootkitted"
+KKS.KmdIsKeyboardRkt.SVCDESC = "Is Keyboard Rootkitted Driver"
