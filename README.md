@@ -5,3 +5,5 @@ and SMI trapped keyboard handler. If it detects it, you have been SMM rootkitted
 
 Follow this (http://www.ikjetil.no/Home/Item/26) link to try it out. It should work, 
 if not try booting without driver signature verfication.
+
+**NB! THIS SOFTWARE HAS NO LICENSE!**
