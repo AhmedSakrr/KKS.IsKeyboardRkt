@@ -1,0 +1,162 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KKS.IsKeyboardRkt", "KKS.IsKeyboardRkt\KKS.IsKeyboardRkt.vcxproj", "{38958D3E-989D-4F1C-91CD-A5F219198875}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KKS.KmdIsKeyboardRkt", "KKS.KmdIsKeyboardRkt\KKS.KmdIsKeyboardRkt.vcxproj", "{F728F621-00A3-4CD5-8EB3-D429A2573BC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Include", "Include", "{17C90010-EBB1-4332-AAB9-E4256F271055}"
+	ProjectSection(SolutionItems) = preProject
+		Include\IS_KEYBOARD_RKT_OUTPUT_DATA.h = Include\IS_KEYBOARD_RKT_OUTPUT_DATA.h
+		Include\IsKbdRkt.h = Include\IsKbdRkt.h
+		Include\itsoftware-com.h = Include\itsoftware-com.h
+		Include\itsoftware-exceptions.h = Include\itsoftware-exceptions.h
+		Include\itsoftware.h = Include\itsoftware.h
+	EndProjectSection
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "KKS.IsKeyboardRkt.Setup", "KKS.IsKeyboardRkt.Setup\KKS.IsKeyboardRkt.Setup.wixproj", "{00A58BDC-DD17-429E-85EF-4AE25C4F8B27}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0343B294-447B-4C89-B275-EC229A7BCE53} = {0343B294-447B-4C89-B275-EC229A7BCE53}
+		{72FD06E1-38F2-44E6-9C13-E16A37C6776C} = {72FD06E1-38F2-44E6-9C13-E16A37C6776C}
+	EndProjectSection
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "KKS.IsKeyboardRkt.Installer", "KKS.IsKeyboardRkt.Installer\KKS.IsKeyboardRkt.Installer.wixproj", "{D79422C1-B4E7-44E6-80AB-1E9E4171F454}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0343B294-447B-4C89-B275-EC229A7BCE53} = {0343B294-447B-4C89-B275-EC229A7BCE53}
+		{00A58BDC-DD17-429E-85EF-4AE25C4F8B27} = {00A58BDC-DD17-429E-85EF-4AE25C4F8B27}
+		{72FD06E1-38F2-44E6-9C13-E16A37C6776C} = {72FD06E1-38F2-44E6-9C13-E16A37C6776C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KKS.IsKeyboardRkt.Setup.CustomAction", "KKS.IsKeyboardRkt.Setup.CustomAction\KKS.IsKeyboardRkt.Setup.CustomAction.csproj", "{72FD06E1-38F2-44E6-9C13-E16A37C6776C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KKS.IsKeyboardRktApp", "KKS.IsKeyboardRktApp\KKS.IsKeyboardRktApp.vcxproj", "{0343B294-447B-4C89-B275-EC229A7BCE53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Binaries", "Binaries", "{4AB9B950-79E1-4E66-BD45-18E296FA32AC}"
+	ProjectSection(SolutionItems) = preProject
+		Binaries\devcon.exe = Binaries\devcon.exe
+		Binaries\solberg-it-software-G.pfx = Binaries\solberg-it-software-G.pfx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F51DB0FE-4156-46C9-AACC-D652FB69253F}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe-About.txt = ReadMe-About.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38958D3E-989D-4F1C-91CD-A5F219198875}.Debug|ARM.ActiveCfg = Debug|Win32
+		{38958D3E-989D-4F1C-91CD-A5F219198875}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{38958D3E-989D-4F1C-91CD-A5F219198875}.Debug|x64.ActiveCfg = Debug|x64
+		{38958D3E-989D-4F1C-91CD-A5F219198875}.Debug|x64.Build.0 = Debug|x64
+		{38958D3E-989D-4F1C-91CD-A5F219198875}.Debug|x86.ActiveCfg = Debug|x64
+		{38958D3E-989D-4F1C-91CD-A5F219198875}.Debug|x86.Build.0 = Debug|x64
+		{38958D3E-989D-4F1C-91CD-A5F219198875}.Release|ARM.ActiveCfg = Release|Win32
+		{38958D3E-989D-4F1C-91CD-A5F219198875}.Release|ARM64.ActiveCfg = Release|Win32
+		{38958D3E-989D-4F1C-91CD-A5F219198875}.Release|x64.ActiveCfg = Release|x64
+		{38958D3E-989D-4F1C-91CD-A5F219198875}.Release|x64.Build.0 = Release|x64
+		{38958D3E-989D-4F1C-91CD-A5F219198875}.Release|x86.ActiveCfg = Release|Win32
+		{38958D3E-989D-4F1C-91CD-A5F219198875}.Release|x86.Build.0 = Release|Win32
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Debug|ARM.ActiveCfg = Debug|ARM
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Debug|ARM.Build.0 = Debug|ARM
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Debug|ARM64.Build.0 = Debug|ARM64
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Debug|x64.ActiveCfg = Debug|x64
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Debug|x86.ActiveCfg = Debug|x64
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Debug|x86.Build.0 = Debug|x64
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Release|ARM.ActiveCfg = Release|ARM
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Release|ARM.Build.0 = Release|ARM
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Release|ARM64.ActiveCfg = Release|ARM64
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Release|ARM64.Build.0 = Release|ARM64
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Release|x64.ActiveCfg = Release|x64
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Release|x64.Build.0 = Release|x64
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Release|x86.ActiveCfg = Release|Win32
+		{F728F621-00A3-4CD5-8EB3-D429A2573BC1}.Release|x86.Build.0 = Release|Win32
+		{00A58BDC-DD17-429E-85EF-4AE25C4F8B27}.Debug|ARM.ActiveCfg = Debug|x86
+		{00A58BDC-DD17-429E-85EF-4AE25C4F8B27}.Debug|ARM64.ActiveCfg = Debug|x86
+		{00A58BDC-DD17-429E-85EF-4AE25C4F8B27}.Debug|x64.ActiveCfg = Debug|x86
+		{00A58BDC-DD17-429E-85EF-4AE25C4F8B27}.Debug|x86.ActiveCfg = Debug|x86
+		{00A58BDC-DD17-429E-85EF-4AE25C4F8B27}.Debug|x86.Build.0 = Debug|x86
+		{00A58BDC-DD17-429E-85EF-4AE25C4F8B27}.Release|ARM.ActiveCfg = Release|x86
+		{00A58BDC-DD17-429E-85EF-4AE25C4F8B27}.Release|ARM64.ActiveCfg = Release|x86
+		{00A58BDC-DD17-429E-85EF-4AE25C4F8B27}.Release|x64.ActiveCfg = Release|x86
+		{00A58BDC-DD17-429E-85EF-4AE25C4F8B27}.Release|x64.Build.0 = Release|x86
+		{00A58BDC-DD17-429E-85EF-4AE25C4F8B27}.Release|x86.ActiveCfg = Release|x86
+		{00A58BDC-DD17-429E-85EF-4AE25C4F8B27}.Release|x86.Build.0 = Release|x86
+		{D79422C1-B4E7-44E6-80AB-1E9E4171F454}.Debug|ARM.ActiveCfg = Debug|x86
+		{D79422C1-B4E7-44E6-80AB-1E9E4171F454}.Debug|ARM64.ActiveCfg = Debug|x86
+		{D79422C1-B4E7-44E6-80AB-1E9E4171F454}.Debug|x64.ActiveCfg = Debug|x86
+		{D79422C1-B4E7-44E6-80AB-1E9E4171F454}.Debug|x86.ActiveCfg = Debug|x86
+		{D79422C1-B4E7-44E6-80AB-1E9E4171F454}.Debug|x86.Build.0 = Debug|x86
+		{D79422C1-B4E7-44E6-80AB-1E9E4171F454}.Release|ARM.ActiveCfg = Release|x86
+		{D79422C1-B4E7-44E6-80AB-1E9E4171F454}.Release|ARM64.ActiveCfg = Release|x86
+		{D79422C1-B4E7-44E6-80AB-1E9E4171F454}.Release|x64.ActiveCfg = Release|x86
+		{D79422C1-B4E7-44E6-80AB-1E9E4171F454}.Release|x64.Build.0 = Release|x86
+		{D79422C1-B4E7-44E6-80AB-1E9E4171F454}.Release|x86.ActiveCfg = Release|x86
+		{D79422C1-B4E7-44E6-80AB-1E9E4171F454}.Release|x86.Build.0 = Release|x86
+		{72FD06E1-38F2-44E6-9C13-E16A37C6776C}.Debug|ARM.ActiveCfg = Debug|x86
+		{72FD06E1-38F2-44E6-9C13-E16A37C6776C}.Debug|ARM64.ActiveCfg = Debug|x86
+		{72FD06E1-38F2-44E6-9C13-E16A37C6776C}.Debug|x64.ActiveCfg = Debug|x86
+		{72FD06E1-38F2-44E6-9C13-E16A37C6776C}.Debug|x86.ActiveCfg = Debug|x86
+		{72FD06E1-38F2-44E6-9C13-E16A37C6776C}.Debug|x86.Build.0 = Debug|x86
+		{72FD06E1-38F2-44E6-9C13-E16A37C6776C}.Release|ARM.ActiveCfg = Release|x86
+		{72FD06E1-38F2-44E6-9C13-E16A37C6776C}.Release|ARM64.ActiveCfg = Release|x86
+		{72FD06E1-38F2-44E6-9C13-E16A37C6776C}.Release|x64.ActiveCfg = Release|x86
+		{72FD06E1-38F2-44E6-9C13-E16A37C6776C}.Release|x64.Build.0 = Release|x86
+		{72FD06E1-38F2-44E6-9C13-E16A37C6776C}.Release|x86.ActiveCfg = Release|x86
+		{72FD06E1-38F2-44E6-9C13-E16A37C6776C}.Release|x86.Build.0 = Release|x86
+		{0343B294-447B-4C89-B275-EC229A7BCE53}.Debug|ARM.ActiveCfg = Debug|Win32
+		{0343B294-447B-4C89-B275-EC229A7BCE53}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{0343B294-447B-4C89-B275-EC229A7BCE53}.Debug|x64.ActiveCfg = Debug|x64
+		{0343B294-447B-4C89-B275-EC229A7BCE53}.Debug|x64.Build.0 = Debug|x64
+		{0343B294-447B-4C89-B275-EC229A7BCE53}.Debug|x86.ActiveCfg = Debug|Win32
+		{0343B294-447B-4C89-B275-EC229A7BCE53}.Debug|x86.Build.0 = Debug|Win32
+		{0343B294-447B-4C89-B275-EC229A7BCE53}.Release|ARM.ActiveCfg = Release|Win32
+		{0343B294-447B-4C89-B275-EC229A7BCE53}.Release|ARM64.ActiveCfg = Release|Win32
+		{0343B294-447B-4C89-B275-EC229A7BCE53}.Release|x64.ActiveCfg = Release|x64
+		{0343B294-447B-4C89-B275-EC229A7BCE53}.Release|x64.Build.0 = Release|x64
+		{0343B294-447B-4C89-B275-EC229A7BCE53}.Release|x86.ActiveCfg = Release|Win32
+		{0343B294-447B-4C89-B275-EC229A7BCE53}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://kjetilkristoffersolberg.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = KKS.IsKeyboardRkt\\KKS.IsKeyboardRkt.vcxproj
+		SccProjectName1 = KKS.IsKeyboardRkt
+		SccLocalPath1 = KKS.IsKeyboardRkt
+		SccProjectUniqueName2 = KKS.IsKeyboardRkt.Setup\\KKS.IsKeyboardRkt.Setup.wixproj
+		SccProjectName2 = KKS.IsKeyboardRkt.Setup
+		SccLocalPath2 = KKS.IsKeyboardRkt.Setup
+		SccProjectUniqueName3 = KKS.IsKeyboardRkt.Installer\\KKS.IsKeyboardRkt.Installer.wixproj
+		SccProjectName3 = KKS.IsKeyboardRkt.Installer
+		SccLocalPath3 = KKS.IsKeyboardRkt.Installer
+		SccProjectUniqueName4 = KKS.IsKeyboardRkt.Setup.CustomAction\\KKS.IsKeyboardRkt.Setup.CustomAction.csproj
+		SccProjectName4 = KKS.IsKeyboardRkt.Setup.CustomAction
+		SccLocalPath4 = KKS.IsKeyboardRkt.Setup.CustomAction
+		SccProjectUniqueName5 = KKS.IsKeyboardRktApp\\KKS.IsKeyboardRktApp.vcxproj
+		SccProjectName5 = KKS.IsKeyboardRktApp
+		SccLocalPath5 = KKS.IsKeyboardRktApp
+		SccProjectUniqueName6 = KKS.KmdIsKeyboardRkt\\KKS.KmdIsKeyboardRkt.vcxproj
+		SccProjectName6 = KKS.KmdIsKeyboardRkt
+		SccLocalPath6 = KKS.KmdIsKeyboardRkt
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal
