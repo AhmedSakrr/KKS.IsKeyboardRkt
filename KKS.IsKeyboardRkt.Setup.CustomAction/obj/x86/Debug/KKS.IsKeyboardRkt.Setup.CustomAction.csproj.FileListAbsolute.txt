@@ -1,8 +1,0 @@
-D:\Projects\GitHub\KKS.IsKeyboardRkt.2015\KKS.IsKeyboardRkt.Setup.CustomAction\bin\Debug\KKS.IsKeyboardRkt.Setup.CustomAction.dll
-D:\Projects\GitHub\KKS.IsKeyboardRkt.2015\KKS.IsKeyboardRkt.Setup.CustomAction\bin\Debug\KKS.IsKeyboardRkt.Setup.CustomAction.CA.dll
-D:\Projects\GitHub\KKS.IsKeyboardRkt.2015\KKS.IsKeyboardRkt.Setup.CustomAction\bin\Debug\KKS.IsKeyboardRkt.Setup.CustomAction.pdb
-D:\Projects\GitHub\KKS.IsKeyboardRkt.2015\KKS.IsKeyboardRkt.Setup.CustomAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
-D:\Projects\GitHub\KKS.IsKeyboardRkt.2015\KKS.IsKeyboardRkt.Setup.CustomAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.xml
-D:\Projects\GitHub\KKS.IsKeyboardRkt.2015\KKS.IsKeyboardRkt.Setup.CustomAction\obj\x86\Debug\KKS.IsKeyboardRkt.Setup.CustomAction.csprojResolveAssemblyReference.cache
-D:\Projects\GitHub\KKS.IsKeyboardRkt.2015\KKS.IsKeyboardRkt.Setup.CustomAction\obj\x86\Debug\KKS.IsKeyboardRkt.Setup.CustomAction.dll
-D:\Projects\GitHub\KKS.IsKeyboardRkt.2015\KKS.IsKeyboardRkt.Setup.CustomAction\obj\x86\Debug\KKS.IsKeyboardRkt.Setup.CustomAction.pdb
